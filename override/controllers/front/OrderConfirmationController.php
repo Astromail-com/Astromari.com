@@ -1,0 +1,77 @@
+<?php
+/**
+* NOTICE OF LICENSE
+*
+* This file is part of the 'Wk Warehouses Management For Prestashop 1.7' module feature.
+* Developped by Khoufi Wissem (2018).
+* You are not allowed to use it on several site
+* You are not allowed to sell or redistribute this module
+* This header must not be removed
+*
+*  @author    KHOUFI Wissem - K.W
+*  @copyright Khoufi Wissem
+*  @license   http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+*/
+class OrderConfirmationController extends OrderConfirmationControllerCore
+{
+    /*
+    * module: wkwarehouses
+    * date: 2023-01-21 15:36:36
+    * version: 1.69.76
+    */
+    public function initContent()
+    {
+        if (!Module::isEnabled('wkwarehouses') || !Configuration::get('PS_ADVANCED_STOCK_MANAGEMENT')) {
+            return parent::initContent();
+        }
+        if (Configuration::isCatalogMode()) {
+            Tools::redirect('index.php');
+        }
+        $order = new Order(Order::getIdByCartId((int)$this->id_cart));
+        if (!Order::isOrderMultiWarehouses($order) && !Order::isOrderMultiCarriers($order)) {
+            return parent::initContent();
+        }
+        
+        $allOrders = array((int)$order->id);
+        
+        foreach ($order->getBrother() as $suborder) {
+            $allOrders[] = (int)$suborder->id;
+            $order->total_paid_real += $suborder->total_paid_real;
+            $order->total_paid += $suborder->total_paid;
+            $order->total_discounts += $suborder->total_discounts;
+            $order->total_discounts_tax_incl += $suborder->total_discounts_tax_incl;
+            $order->total_discounts_tax_excl += $suborder->total_discounts_tax_excl;
+            $order->total_paid_tax_incl += $suborder->total_paid_tax_incl;
+            $order->total_paid_tax_excl += $suborder->total_paid_tax_excl;
+            $order->total_products += $suborder->total_products;
+            $order->total_products_wt += $suborder->total_products_wt;
+            $order->total_shipping += $suborder->total_shipping;
+            $order->total_shipping_tax_incl += $suborder->total_shipping_tax_incl;
+            $order->total_shipping_tax_excl += $suborder->total_shipping_tax_excl;
+            $order->total_wrapping += $suborder->total_wrapping;
+            $order->total_wrapping_tax_incl += $suborder->total_wrapping_tax_incl;
+            $order->total_wrapping_tax_excl += $suborder->total_wrapping_tax_excl;
+        }
+        foreach ($allOrders as $orderID) {
+            (new Order($orderID))->fixOrderPayment();
+        }
+        $this->context->controller->addCSS(_MODULE_DIR_.'wkwarehouses/views/css/wkwarehouses.css', 'all');
+        $presentedOrder = $this->order_presenter->present($order);
+        $register_form = $this
+            ->makeCustomerForm()
+            ->setGuestAllowed(false)
+            ->fillWith(Tools::getAllValues());
+        parent::initContent();
+        $this->context->smarty->assign(array(
+            'HOOK_ORDER_CONFIRMATION' => $this->displayOrderConfirmation($order),
+            'HOOK_PAYMENT_RETURN' => $this->displayPaymentReturn($order),
+            'order' => $presentedOrder,
+            'register_form' => $register_form,
+        ));
+        if ($this->context->customer->is_guest) {
+            
+            $this->context->customer->mylogout();
+        }
+        $this->setTemplate('checkout/order-confirmation');
+    }
+}

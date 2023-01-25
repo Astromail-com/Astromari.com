@@ -1,0 +1,3 @@
+Hallo beheerder,
+Shop {shop_seller} heeft zojuist product {product_name} bijgewerkt en wacht op uw goedkeuring
+Vriendelijke groeten,

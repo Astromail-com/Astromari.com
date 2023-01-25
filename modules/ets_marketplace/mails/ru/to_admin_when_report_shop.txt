@@ -1,0 +1,4 @@
+Привет админ,
+{reporter} только что сообщил о нарушении {shop_seller}.
+{title}
+{content}

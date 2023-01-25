@@ -1,0 +1,6 @@
+Hallo {seller_name},
+Uw product {product_name} is geweigerd.
+Product-ID: {product_ID}
+{reason_txt}
+Bedankt voor uw tijd.
+Hoogachtend.

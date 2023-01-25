@@ -1,0 +1,4 @@
+Hallo {seller_name},
+Sorry! Je winkelcreatie is geweigerd
+Reden: {reason}
+Hoogachtend.

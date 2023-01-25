@@ -1,0 +1,25 @@
+#printLabel {
+    background: url("../img/icon-print.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background-size: 25px 25px;
+    float: right;
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+}
+#printLabelSmall {
+     background: url("../img/icon-print.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+     background-size: 20px 20px;
+     height: 20px;
+     width: 20px;
+     float: left;
+     cursor: pointer;
+ }
+
+.customer #addressShipping #printLabel, .customer #addressInvoice #printLabel {
+    background-size: 20px 20px;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    right:0px;
+    bottom:0px;
+}

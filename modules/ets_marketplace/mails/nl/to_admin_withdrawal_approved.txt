@@ -1,0 +1,6 @@
+Hallo beheerder,
+U heeft een opnameverzoek goedgekeurd. Hieronder vindt u gedetailleerde informatie over het opnameverzoek:
+Opname-ID: {withdrawal_ID}
+Opnamebedrag: {amount}
+Van verkoper: {seller_name}
+Betaalmethode: {payment_method}

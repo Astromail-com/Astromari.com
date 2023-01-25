@@ -1,0 +1,5 @@
+Привет админ,
+{seller_name} был подтвержден платеж #{invoice_ref}
+Тема: {subject}
+Содержание:
+{content}

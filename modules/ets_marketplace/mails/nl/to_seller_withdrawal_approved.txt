@@ -1,0 +1,6 @@
+Hallo {seller_name},
+Uw opnameverzoek is goedgekeurd. Hieronder vindt u gedetailleerde informatie over het opnameverzoek:
+Opname-ID: {withdrawal_ID}
+Opnamebedrag: {amount}
+Betaalmethode: {payment_method}
+Goedgekeurde datum: {approved_date}

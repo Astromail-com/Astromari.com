@@ -1,0 +1,7 @@
+Привет админ,
+{seller_name} подтвердил оплату счета {billing_number}
+Найдите подробности ниже:
+Платежный номер: {billing_number}
+Название магазина: {shop_seller}
+Сумма: {amount}
+Дата подтверждения: {confirmed_date}

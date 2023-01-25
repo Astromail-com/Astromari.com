@@ -1,0 +1,87 @@
+v7.2.2
+
+# Bug Fixed -
+-   Plan image issue fixed - When merchant update the plan without modifying plan image then image were getting delete.
+
+
+v7.2.1
+
+Bug Fixed -
+
+-   cronupdate.php updated to fixed removing customer from customer group when plan has been expired.
+-   If plan is expired then status message updated with "Expired" before it was showing "Extended"
+
+
+v7.2.0
+
+# Bug Fixed-
+
+-   Extending problem fixed -
+-   After changing primary key in database, lots of issue was there in v7.1.0 - Fixed
+
+
+
+v7.1.0
+
+# Compatible with ps v1.7xx
+
+# New Features-
+-   Configure plan to redirect on product page
+-   Hide/show plan price
+-   Hide/show plan description
+-   Hide/show plan purchase button
+-   Add existing customers into plan from backend.
+
+
+
+
+v7.0.0
+
+# Compatible with ps v1.7xx
+
+
+Features -
+
+Plan Features -
+
+- Provide existing or new customers to become prime users
+- Set name of the membership in various langauge.
+- Set membership price as per your requirement or change it anytime
+- Upload image for the membership plan.
+
+General Features -
+
+- Allow customers to extend their running plans.
+- Allow customers to renew their expired plans.
+- Display link in navigation "Become Prime Member", As advertisement for the prime membership.
+- Enable membership must be approved by admin or set specific order status to approve customer's prime membership plans.
+
+Mail Features -
+
+- Enable mail notification when any customer buy the prime membership plan.
+- Add multiple email addresses to get notification for new prime membership users, Use comma to add multiple emails.
+- Display warning message to customer when their plan is about to expire.
+- Set number of days before plan expiry message display on customer's prime account.
+- Send warning mail to customer when their plan is about to expire.
+- Set number of days when warning mail will send to customer. For this we have to use cronjob scheduler.
+
+Customer Features -
+
+- Customer can buy prime membership from their my account.
+- Once customer buy the plan, they will be enrolled in new customer group "Prime User" and their default group will changed to "Prime membership".
+- Customer will get all the benifits provided to "prime membership" group.
+- Customer will get a warning mail before their mail is about to expire.
+- Customer will see warning message when their plan is about to expire in their my prime membership account.
+
+Admin Features -
+
+- Admin will have a seperate controller/tab to manage all the prime users request.
+- Admin can accept the prime membership request.
+- Admin can enable/disable any plan at any time.
+- Admin can change the name of the plan, price of the plan and duration of the plan at any time.
+- Admin will assign features to "prime membership" group, so that all prime users will avail the benifits.
+
+
+v7.1.0
+
+-   Existing customer also added into membership plan by admin manually.

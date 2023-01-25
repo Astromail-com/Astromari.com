@@ -1,0 +1,25 @@
+.printify-order-status::before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 8px;
+    border-radius: 50%;
+    background: #949494;
+}
+
+.printify-order-status.on-hold:before {
+    background:#2097f6
+}
+.printify-order-status.checking-quality:before,
+.printify-order-status.sending-to-production:before {
+    background:#ffe400
+}
+.printify-order-status.in-production:before,
+.printify-order-status.partially-fulfilled:before {
+    background:#319e50
+}
+.printify-order-status.has-issues:before,
+.printify-order-status.payment-not-received:before {
+    background:#d15564
+}

@@ -1,0 +1,4 @@
+Привет {seller_name},
+{customer_name} только что ответил вашему контакту в {message_title}
+
+{content_message}

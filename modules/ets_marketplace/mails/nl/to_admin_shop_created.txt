@@ -1,0 +1,7 @@
+Hallo beheerder,
+{seller_name} heeft zojuist een winkel aangemaakt
+Hieronder vindt u de winkelinformatie:
+Winkelnaam: {shop_seller_name}
+Winkelbeschrijving: {shop_description}
+Winkeladres: {shop_address}
+Winkeltelefoon: {shop_phone}

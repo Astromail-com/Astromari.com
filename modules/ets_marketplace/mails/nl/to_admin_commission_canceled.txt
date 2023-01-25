@@ -1,0 +1,7 @@
+Hallo beheerder,
+De commissie van een klant wordt geannuleerd. Vind hieronder details:
+ID commissie: R-{commission_ID}
+Commissiebedrag: {amount}
+Reden: {reason}
+Aanmaakdatum: {created_date}
+Geannuleerde datum: {canceled_date}

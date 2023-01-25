@@ -1,0 +1,5 @@
+Привет {seller_name},
+{reporter} только что сообщил, что ваш продукт {product_name} в {shop_seller} нарушен.
+{title}
+{content}
+Посмотреть продукт: {link_report}

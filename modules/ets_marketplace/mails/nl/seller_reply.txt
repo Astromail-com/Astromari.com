@@ -1,0 +1,4 @@
+Hallo {customer_name},
+{seller_name} heeft zojuist gereageerd op uw contactpersoon op {message_title}
+{content_message}
+Antwoord

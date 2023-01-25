@@ -1,0 +1,5 @@
+Hallo {customer_name},
+U bent door {seller_name} geautoriseerd om hun winkel in de {shop_name} te beheren. Geautoriseerde inhoud die je hieronder kunt zien
+{permission}
+Vriendelijke groeten,
+Klik op deze link om het verzoek te accepteren of te weigeren: {link_account}

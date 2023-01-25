@@ -1,0 +1,8 @@
+Hallo beheerder,
+Er is een nieuw opnameverzoek ingediend. Bekijk de gedetailleerde informatie over dit verzoek en verwerk het:
+Opname-ID: {withdrawal_ID}
+Opnamebedrag: {amount}
+Van verkoper: {seller_name}
+Betaalmethode: {payment_method}
+Aanmaakdatum: {created_date}
+Verwerkte datum (geschat): {processed_date}

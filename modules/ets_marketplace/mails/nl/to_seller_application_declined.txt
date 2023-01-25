@@ -1,0 +1,5 @@
+Hallo {seller_name},
+Uw aanvraag is afgewezen.
+Reden: {application_declined_reason}
+Hoogachtend.
+

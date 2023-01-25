@@ -1,0 +1,6 @@
+Hallo {seller_name},
+Uw product {product_name} is goedgekeurd.
+Product-ID: {product_ID}
+Productlink: {product_link}
+Nu kunt u beginnen met het verkopen van het product. Succes met de verkoop!
+Hoogachtend.

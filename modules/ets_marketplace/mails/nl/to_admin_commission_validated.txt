@@ -1,0 +1,6 @@
+Hallo beheerder,
+De commissie van een klant wordt goedgekeurd. Vind hieronder details:
+Commissie-ID: R-{commission_ID}
+Commissiebedrag: {amount}
+Aanmaakdatum: {created_date}
+Goedgekeurde datum: {approved_date}

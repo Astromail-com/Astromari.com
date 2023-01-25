@@ -1,0 +1,6 @@
+Hallo {seller_name},
+Uw commissie is goedgekeurd. Vind hieronder details:
+Commissie-ID: R-{commission_ID}
+Commissiebedrag: {amount}
+Aanmaakdatum: {created_date}
+Goedgekeurde datum: {approved_date}

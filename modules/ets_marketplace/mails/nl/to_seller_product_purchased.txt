@@ -1,0 +1,10 @@
+Hallo {seller_name},
+{customer_name} heeft enkele producten gekocht bij {seller_shop}
+Bestel Details
+Producten:
+{product_detail_txt}
+Bestelreferentie: {order_reference}
+Totale betaling: {total_payment}
+Aankoopdatum: {purchased_date}
+Bestelstatus: {order_status}
+Hoogachtend.

@@ -1,0 +1,5 @@
+Привет {seller_name},
+Ваша заявка отклонена.
+Причина: {application_declined_reason}
+Искренне Ваш.
+

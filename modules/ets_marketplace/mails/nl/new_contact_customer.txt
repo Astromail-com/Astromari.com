@@ -1,0 +1,2 @@
+Hallo {customer_name},
+Uw bericht #{title} is succesvol verzonden naar winkel #{shop_name}

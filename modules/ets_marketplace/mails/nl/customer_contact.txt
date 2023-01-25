@@ -1,0 +1,3 @@
+Hallo {seller_name},
+Je hebt zojuist een bericht ontvangen in de winkel van {seller_shop_name}. Hieronder vindt u de berichtdetails:
+{content_message}

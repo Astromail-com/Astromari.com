@@ -1,0 +1,10 @@
+Привет {seller_name},
+{customer_name} купил несколько товаров у {seller_shop}
+Информация для заказа
+Товары:
+{product_detail_txt}
+Ссылка на заказ: {order_reference}
+Общий платеж: {total_payment}
+Дата покупки: {purchased_date}
+Статус заказа: {order_status}
+Искренне Ваш.

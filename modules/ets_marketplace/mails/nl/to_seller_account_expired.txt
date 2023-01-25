@@ -1,0 +1,3 @@
+Hallo {seller_name},
+Uw verkopersaccount is net verlopen. Als je dit verkopersaccount wilt blijven gebruiken, neem dan contact met ons op via ons e-mailadres: {store_email}
+Hoogachtend.

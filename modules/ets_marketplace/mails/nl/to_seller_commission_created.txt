@@ -1,0 +1,8 @@
+Hallo {seller_name},
+Er wordt een nieuwe commissie voor u aangemaakt. Vind hieronder details:
+Commissie-ID: R-{commission_ID}
+Commissiebedrag: {amount}
+Verkocht product: {product_name}
+Bestelreferentie: {order_reference}
+Aanmaakdatum: {created_date}
+Status: {status}

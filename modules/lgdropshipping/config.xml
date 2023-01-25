@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>lgdropshipping</name>
+    <displayName><![CDATA[Dropshipping - Emails to Suppliers and Carriers]]></displayName>
+    <version><![CDATA[1.2.17]]></version>
+    <description><![CDATA[Send your dropshipping orders automatically to suppliers and carriers.]]></description>
+    <author><![CDATA[L&iacute;nea Gr&aacute;fica]]></author>
+    <tab><![CDATA[shipping_logistics]]></tab>
+	<confirmUninstall><![CDATA[Are you sure that you want to uninstall the module?]]></confirmUninstall>
+    <is_configurable>1</is_configurable>
+    <need_instance>1</need_instance>
+	<limited_countries></limited_countries>
+</module>

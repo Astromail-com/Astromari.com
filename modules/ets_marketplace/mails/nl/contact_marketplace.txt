@@ -1,0 +1,5 @@
+Hallo beheerder,
+{seller_name} is bevestigde betaling #{invoice_ref}
+Onderwerp: {subject}
+Inhoud:
+{content}

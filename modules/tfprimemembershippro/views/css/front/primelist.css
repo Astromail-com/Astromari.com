@@ -1,0 +1,245 @@
+/**
+* 2008-2022 Prestaworld
+*
+* NOTICE OF LICENSE
+*
+* The source code of this module is under a commercial license.
+* Each license is unique and can be installed and used on only one website.
+* Any reproduction or representation total or partial of the module, one or more of its components,
+* by any means whatsoever, without express permission from us is prohibited.
+*
+* DISCLAIMER
+*
+* Do not alter or add/update to this file if you wish to upgrade this module to newer
+* versions in the future.
+*
+* @author    prestaworld
+* @copyright 2008-2022 Prestaworld
+* @license https://opensource.org/licenses/AFL-3.0 Academic Free License version 3.0
+* International Registered Trademark & Property of prestaworld
+*/
+
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700,800';
+
+.bttn-white {
+    position: relative;
+    background: #482cbf;
+    background: -webkit-linear-gradient(45deg, rgba(72, 44, 191, 1) 0%, rgba(106, 198, 240, 1) 100%);
+    background: -o-linear-gradient(45deg, rgba(72, 44, 191, 1) 0%, rgba(106, 198, 240, 1) 100%);
+    background: linear-gradient(45deg, rgba(72, 44, 191, 1) 0%, rgba(106, 198, 240, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#482cbf', endColorstr='#6ac6f0', GradientType=1);
+    overflow: hidden;
+    z-index: 1;
+    margin-right: 10px;
+    border: none
+}
+
+.bttn-white:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: -1;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    opacity: 1
+}
+
+.bttn-white.active,
+.bttn-white:hover {
+    color: #fff
+}
+
+.bttn-white.active:before,
+.bttn-white:hover:before {
+    opacity: 0
+}
+
+.bttn-default,
+.bttn-white {
+    padding: 12px 30px;
+    background-color: #fff;
+    display: inline-block;
+    color: #768ede;
+    text-transform: uppercase;
+    border-radius: 50px;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+    font-size: 14px;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    border: none
+}
+
+#tfmain .bttn-default .lnr,
+#tfmain .bttn-white .lnr {
+    margin-right: 10px
+}
+#tfmain .upper {
+    text-transform: uppercase
+}
+#tfmain .price-box {
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: center;
+    color: #8790af;
+    -webkit-box-shadow: 0 0 15px -5px rgba(0, 0, 0, .1);
+    box-shadow: 0 0 15px -5px rgba(0, 0, 0, .1);
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s
+}
+
+#tfmain .price-box:hover {
+    -webkit-box-shadow: 0 0 50px -15px #4d43c6;
+    box-shadow: 0 0 50px -15px #4d43c6
+}
+
+#tfmain .price-box .price-header {
+    min-height: 340px;
+    background-color: #f2f3fc;
+    padding: 30px;
+    color: #768ede;
+    background: #482cbf;
+    background: -webkit-linear-gradient(45deg, rgba(72, 44, 191, 1) 0%, rgba(106, 198, 240, 1) 100%);
+    background: -o-linear-gradient(45deg, rgba(72, 44, 191, 1) 0%, rgba(106, 198, 240, 1) 100%);
+    background: linear-gradient(45deg, rgba(72, 44, 191, 1) 0%, rgba(106, 198, 240, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#482cbf', endColorstr='#6ac6f0', GradientType=1);
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s
+}
+
+#tfmain .price-box .price-header:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f2f3fc;
+    z-index: -1;
+    opacity: 1;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s
+}
+
+#tfmain .price-box:hover .price-header {
+    color: #fff
+}
+
+#tfmain .price-box:hover .price-header:before {
+    opacity: 0
+}
+
+#tfmain .price-box .price-header .price-icon {
+    font-size: 60px;
+    margin-bottom: 10px
+}
+
+#tfmain .price-box .price-header h4 {
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 3px
+}
+
+#tfmain .price-box .price-body {
+    padding: 35px
+}
+
+#tfmain .price-box .price-body ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    padding-left: 30px;
+}
+
+#tfmain .price-box .price-rate {
+    margin-top: 15px;
+    color: #768ede;
+    margin-bottom: 25px;
+    font-size: 20px
+}
+
+#tfmain .price-box .price-rate sup {
+    top: -20px;
+    font-size: 26px
+}
+
+#tfmain .price-box .price-rate .rate {
+    font-size: 44px
+}
+
+#tfmain .price-box .price-footer {
+    margin-top: 15px;
+    margin-bottom: 40px
+}
+
+#tfmain .price-box .price-footer .bttn-white {
+    padding: 13px 50px
+}
+
+#tfmain .price-box .price-footer .bttn-white:before {
+    width: calc(100% - 4px);
+    height: calc(100% - 4px);
+    border-radius: 100px;
+    left: 2px;
+    top: 2px
+}
+#tfmain .bttn-white {
+    right: 0;
+    top: 0;
+    margin-right: 0
+}
+#tfmain .price-list {
+    max-height: 140px;
+    min-height: 140px;
+    overflow: auto;
+}
+#tfmain .tfbottom {
+    margin-bottom: 20px;
+}
+#tfmain .presta-desc {
+    margin-top: 12px;
+    font-size: 14px;
+    text-align: left;
+    height: 120px;
+    overflow:auto;
+}
+.presta-no-plan {
+    color: #de1111;
+    text-align: center;
+}
+.presta-bullet {
+    color: #1d1c1c;
+    font-size: 14px;
+}
+.presta-features-content {
+    margin-bottom: 5px;
+}
+.presta-card {
+    margin-top: 12px;
+}
+.presta-modal-footer {
+    margin-top: 10px;
+}
+.presta-modal-close {
+    float:right;
+}
+.presta-modal-purchase-btn {
+    float:right;
+    margin-right: 15px;
+}
+.presta-prime-features {
+    list-style-type: square;
+}

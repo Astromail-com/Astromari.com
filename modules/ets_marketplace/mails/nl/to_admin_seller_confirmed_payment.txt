@@ -1,0 +1,7 @@
+Hallo beheerder,
+{seller_name} heeft de betaling van facturering {billing_number}
+Vind hieronder details:
+Factuurnummer: {billing_number}
+Winkelnaam: {shop_seller}
+Bedrag: {amount}
+Bevestigde datum: {confirmed_date}

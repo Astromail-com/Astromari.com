@@ -1,0 +1,6 @@
+<FilesMatch "\.(label)$">
+    Header set Content-Type application/octet-stream
+    Header set Content-Type application/force-download
+    Header set Content-Type application/download
+    Header set Content-Disposition attachment
+</FilesMatch>

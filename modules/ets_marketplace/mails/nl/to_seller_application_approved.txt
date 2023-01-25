@@ -1,0 +1,5 @@
+Hallo {seller_name},
+Uw aanvraag is geaccepteerd.
+U kunt nu uw winkel maken
+Hoogachtend.
+

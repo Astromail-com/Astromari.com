@@ -1,0 +1,9 @@
+#### Initial release v1.0.0 – December 1 2017 ####
+
+#### Major Update v1.2.5 – August 8 2018 ####
+[FIXED] - Fixed category tree issue
+[ADDED] - Added stability improvements
+
+#### Major Update v1.4.5 – October 19 2020 ####
+[ADDED] - Added option to exclude Home Category
+[ADDED] - Added option to assign products to default category only and remove it from parent categories

@@ -1,0 +1,54 @@
+<table style="line-height: 1.7; border-collapse: collapse; margin: 0; border: 1px solid #cccccc;" width="100%">
+<tbody>
+<tr>
+<td style="width: 50%; border-top: 1px solid #cccccc; border-bottom: 1px solid #cccccc;">
+<table style="padding: 5px 2px;">
+    <tbody>
+    <tr><td><h4 style="margin: 0;">Deliver to:</h4>
+        {customer_firstname} {customer_lastname}<br /> {customer_address}<br /> {customer_state}<br /> {customer_city}, {customer_postcode}<br /> {customer_country}<br /> Phone number: {customer_phone}</td>
+    </tr>
+    </tbody>
+</table>
+</td>
+<td style="border-top: 1px solid #cccccc; border-bottom: 1px solid #cccccc;">
+    <table style="padding: 5px 2px;">
+    <tbody>
+        <tr><td><h4 style="margin: 0;">Shipped by (if undelivered, return to):</h4>
+        {shop_name}<br /> {shop_address}<br /> {shop_state}<br /> {shop_city}, {shop_postcode}<br /> {shop_country}<br /> Phone number: {shop_phone}</td>
+        </tr>
+    </tbody>
+    </table>
+</td>
+</tr>
+<tr>
+<td colspan="2" style="border-top: 1px solid #cccccc; border-bottom: 1px solid #cccccc;">
+    <table style="padding: 5px 2px;">
+    <tbody><tr><td><b>ORDER # {reference_order}</b><br /> {barcode_order}</td>
+        </tr>
+    </tbody>
+    </table>
+</td>
+</tr>
+<tr>
+<td style="border-top: 1px solid #cccccc; border-bottom: 1px solid #cccccc;">
+    <table style="padding: 5px 2px;">
+    <tbody>
+        <tr><td><b>Payment method:</b> {payment_method}</td>
+        </tr>
+        <tr><td><b>Shipping method:</b> {shipping_method}</td>
+        </tr>
+        <tr><td><b>Shipment weight:</b> {total_weight}</td>
+        </tr>
+    </tbody>
+    </table>
+</td>
+<td> </td>
+</tr>
+</tbody>
+</table>
+<table width="100%" style="margin:0;padding:0;">
+<tbody>
+<tr><td>{product_list_total_order}</td>
+</tr>
+</tbody>
+</table>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>wkwarehouses</name>
+    <displayName><![CDATA[Wk Warehouses Management]]></displayName>
+    <version><![CDATA[1.69.76]]></version>
+    <description><![CDATA[Manage warehouses, their locations and quantities in stock for your products.]]></description>
+    <author><![CDATA[Khoufi Wissem]]></author>
+    <tab><![CDATA[administration]]></tab>
+	<confirmUninstall><![CDATA[All products using already advanced stock management will switch to normal stock management and lose accordingly warehouses stocks configurations. Are you sure you want to uninstall? ]]></confirmUninstall>
+    <is_configurable>1</is_configurable>
+    <need_instance>0</need_instance>
+	<limited_countries></limited_countries>
+</module>

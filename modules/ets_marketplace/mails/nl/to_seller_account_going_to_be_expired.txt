@@ -1,0 +1,7 @@
+Hallo {seller_name},
+Uw verkopersaccount verloopt op {date}. Stuur de terugkerende vergoeding naar ons om uw verkopersaccount te vernieuwen.
+Kostenbedrag: {fee_amount}
+Hier is onze betalingsinformatie:
+{payment_information}
+Hoogachtend.
+

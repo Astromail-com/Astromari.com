@@ -1,0 +1,6 @@
+CUSTOM PRODUCT
+Please find the url of your custom product here :
+
+	Url : {url} 
+	
+	

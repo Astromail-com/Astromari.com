@@ -1,0 +1,37 @@
+<?php
+
+global $_MODULE;
+$_MODULE = array();
+$_MODULE['<{ets_ordermanager}prestashop>_customized_data_c2808546f3e14d267d798f4e0e6f102e'] = 'تخصيص';
+$_MODULE['<{ets_ordermanager}prestashop>_customized_data_3d0d1f906e27800531e054a3b6787b7c'] = 'الكميَّة:';
+$_MODULE['<{ets_ordermanager}prestashop>_customized_data_6702a6e3bc2dce95c3e3b61fe578f29c'] = 'القيمة:';
+$_MODULE['<{ets_ordermanager}prestashop>_product_line_03ab340b3f99e03cff9e84314ead38c0'] = 'الكمية';
+$_MODULE['<{ets_ordermanager}prestashop>_product_line_967ad092fca7b99aa4f170ed73a6a8e1'] = '%quantity_refunded% (%amount_refunded% اعادة)';
+$_MODULE['<{ets_ordermanager}prestashop>_product_line_4fdfd561c540aa5e20a9b2b9c06054bb'] = 'محتوى الشحنة';
+$_MODULE['<{ets_ordermanager}prestashop>_product_line_ce5bf551379459c1c61d2a204061c455'] = 'موقع';
+$_MODULE['<{ets_ordermanager}prestashop>_product_line_ca70428d9ed105c07f40d3c21d130859'] = 'عنصر الحزمة';
+$_MODULE['<{ets_ordermanager}prestashop>_product_line_dd70925db57b570bcb660d68c30d5e0b'] = 'مرجع المورد:';
+$_MODULE['<{ets_ordermanager}prestashop>view_01abfc750a0c942167651c40d088531d'] = 'رقم';
+$_MODULE['<{ets_ordermanager}prestashop>view_f8246f1c2cfd9a81a376223428bd09d7'] = 'لا توجد فواتير شراء';
+$_MODULE['<{ets_ordermanager}prestashop>view_a6181ae0a3e0370de94efa64782a6e79'] = 'أي التسليم زلة';
+$_MODULE['<{ets_ordermanager}prestashop>view_931d3a3ad177dd96a28c9642fec11b01'] = 'رقم البطاقة';
+$_MODULE['<{ets_ordermanager}prestashop>view_f4ec5f57bd4d31b803312d873be40da9'] = 'تغير';
+$_MODULE['<{ets_ordermanager}prestashop>view_d53b54a2bdbf970c70b7de7de4f6021f'] = 'عدد الطلبات السابقة:';
+$_MODULE['<{ets_ordermanager}prestashop>view_8a8ece2eaecf6b5771d66434212e060d'] = 'إجمالي المبالغ المدفوعة منذ التسجيل:';
+$_MODULE['<{ets_ordermanager}prestashop>view_47f9082fc380ca62d531096aa1d110f1'] = 'خاصة';
+$_MODULE['<{ets_ordermanager}prestashop>view_2ab74fb771ac34b95b1657895282d5d9'] = 'اختر رسالة القياسية';
+$_MODULE['<{ets_ordermanager}prestashop>view_fdfac28b5ad628f25649d9c2eb4fc62e'] = 'اعادة';
+$_MODULE['<{ets_ordermanager}prestashop>view_988fd738de9c6d177440c5dcf69e73ce'] = 'العودة';
+$_MODULE['<{ets_ordermanager}prestashop>view_76f0ed934de85cc7131910b32ede7714'] = 'رد';
+$_MODULE['<{ets_ordermanager}prestashop>view_689202409e48743b914713f96d93947c'] = 'القيمة';
+$_MODULE['<{ets_ordermanager}prestashop>view_b52b44c9d23e141b067d7e83b44bb556'] = 'المنتجات';
+$_MODULE['<{ets_ordermanager}prestashop>view_9d5bf15117441a1b52eb1f0808e4aad3'] = 'خصومات';
+$_MODULE['<{ets_ordermanager}prestashop>view_711cb64729ed5b666cf97c01691f5806'] = 'سداد تكاليف الشحن';
+$_MODULE['<{ets_ordermanager}prestashop>view_0da6a00e3eb2132d5cf97463a099c49f'] = 'رقم طلب الشراء';
+$_MODULE['<{ets_ordermanager}prestashop>view_9e95da88fdfc002080300ef14cfba583'] = 'قم بتضمين مبلغ القسيمة الأولية:';
+$_MODULE['<{ets_ordermanager}prestashop>view_ec7ef95eeedfb53da36578da83b77ca6'] = 'استبعاد مبلغ القسيمة الأولية:';
+$_MODULE['<{ets_ordermanager}prestashop>view_6b743762523778c559d152e58f15af70'] = 'المبلغ الذي تختاره:';
+$_MODULE['<{ets_ordermanager}prestashop>view_f38c718d5cc5ea7331d8acf533f9bf0d'] = 'يتعلق هذا التحذير أيضًا بالأوامر التالية:';
+$_MODULE['<{ets_ordermanager}prestashop>view_341ee6bf57abde84135c32f55a607de2'] = 'هل تريد إرسال هذه الرسالة إلى العملاء؟';
+$_MODULE['<{ets_ordermanager}prestashop>view_44f36e0e113ab5d842c47691364f6eb4'] = 'لا يمكن إرجاع هذا المنتج';
+$_MODULE['<{ets_ordermanager}prestashop>view_b8d649752e2493d7d761b05cc255c3fd'] = 'لإلغاء كمية أكبر من الكمية المتاحة';

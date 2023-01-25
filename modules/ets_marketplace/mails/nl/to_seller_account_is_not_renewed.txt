@@ -1,0 +1,6 @@
+Hallo {seller_name},
+Uw verkopersaccount wordt op {date} uitgeschakeld. Als u dit verkopersaccount wilt blijven gebruiken, stuurt u ons de terugkerende vergoeding vóór {date}
+Kostenbedrag: {fee_amount}
+Hier is onze betalingsinformatie:
+{payment_information}
+Hoogachtend.

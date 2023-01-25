@@ -1,0 +1,6 @@
+Hallo {seller_name},
+Bedankt voor je deelname aan onze marktplaats. Het proces is bijna klaar.
+Als u verkoper wilt worden en uw producten wilt gaan verkopen, stuurt u de registratiekosten {fee_amount} naar ons om het registratieproces te voltooien
+Hier is onze betalingsinformatie:
+{payment_information}
+Hoogachtend.

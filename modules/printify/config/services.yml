@@ -1,0 +1,232 @@
+services:
+    _defaults: { public: true }
+    printify.module:
+        class: 'Printify'
+        factory: ['Module', 'getInstanceByName']
+        arguments:
+            - 'printify'
+
+    #    Installers
+    install.tab:
+        class: 'Invertus\Printify\Install\Tab'
+        arguments:
+            - '%module_settings%'
+
+    installer:
+        class: 'Invertus\Printify\Install\Installer'
+        arguments:
+            - '@printify.module'
+            - '%module_settings%'
+
+    uninstaller:
+        class: 'Invertus\Printify\Install\Uninstaller'
+        arguments:
+            - '@printify.module'
+            - '%module_settings%'
+
+    #    Services
+    image_copier:
+        class: 'Invertus\Printify\Image\ImageCopier'
+
+    printify_association_repository:
+        class: 'Invertus\Printify\Repository\PrintifyAssociationRepository'
+
+    product_repository:
+        class: 'Invertus\Printify\Repository\ProductRepository'
+
+    image_handler:
+        class: 'Invertus\Printify\Product\ProductImageHandler'
+        arguments:
+            - '@image_copier'
+            - '@printify_association_repository'
+            - '@product_repository'
+            - '@printify_logger'
+
+    product_attribute_handler:
+        class: 'Invertus\Printify\Product\ProductAttributeHandler'
+        arguments:
+            - '@printify_association_repository'
+            - '@product_repository'
+
+    attribute_combination_handler:
+        class: 'Invertus\Printify\Product\ProductCombinationHandler'
+        arguments:
+            - '@printify_association_repository'
+            - '@product_repository'
+            - '@printify_logger'
+
+    product_data_handler:
+        class: 'Invertus\Printify\Product\ProductHandler'
+        arguments:
+            - '@printify_association_repository'
+            - '@product_repository'
+            - '@product_attribute_handler'
+            - '@attribute_combination_handler'
+            - '@image_handler'
+
+    invertus.printify.factory.http_client_factory:
+        class: Invertus\Printify\Factory\HttpClientFactory
+
+    invertus.printify.api.shop_api:
+        class: Invertus\Printify\Api\ShopApi
+        arguments: ['@invertus.printify.factory.http_client_factory', '@invertus.printify.api.token_api']
+
+    invertus.printify.product_api:
+        class: Invertus\Printify\Api\ProductApi
+        arguments:
+            - '@invertus.printify.factory.http_client_factory'
+            - '@invertus.printify.api.token_api'
+
+    invertus.printify.api.token_api:
+      class: Invertus\Printify\Api\TokenApi
+      arguments:
+            - '@invertus.printify.factory.http_client_factory'
+
+    invertus.printify.api.web_hook_api:
+        class: Invertus\Printify\Api\WebHookApi
+        arguments:
+            - '@invertus.printify.factory.http_client_factory'
+            - '@invertus.printify.api.token_api'
+
+    invertus.printify.api.order_api:
+        class: Invertus\Printify\Api\OrderApi
+        arguments: ['@invertus.printify.factory.http_client_factory', '@invertus.printify.api.token_api']
+
+    product_delete_handler:
+        class: 'Invertus\Printify\Product\ProductDeleteHandler'
+        arguments:
+            - '@product_repository'
+            - '@printify_association_repository'
+
+    printify_product_delete_handler:
+        class: Invertus\Printify\Product\PrintifyProductDeleteHandler
+        arguments:
+            - '@printify_association_repository'
+            - '@invertus.printify.product_api'
+            - '@printify_logger'
+
+    invertus.printify.builder.line_item_builder:
+        class: Invertus\Printify\Builder\LineItemBuilder
+
+    printify_order_resolver:
+        class: 'Invertus\Printify\Service\PrintifyOrderResolver'
+        arguments:
+            - '@product_repository'
+            - '@printify_order_repository'
+            - '@invertus.printify.builder.line_item_builder'
+            - '@invertus.printify.api.order_api'
+            - '@printify_logger'
+
+    printify_order_repository:
+        class: 'Invertus\Printify\Repository\PrintifyOrderRepository'
+
+    image_manager:
+        class: 'Invertus\Printify\Service\ImageManager'
+        arguments:
+            - '@printify.module'
+            - '%module_settings%'
+
+    printify_router:
+        class: 'Invertus\Printify\Service\PrintifyLink'
+        arguments:
+            - '%printify_routing%'
+            - '@printify.module'
+
+    invertus.printify.print_provider_api:
+        class: Invertus\Printify\Api\PrintProviderApi
+        arguments:
+            - '@invertus.printify.factory.http_client_factory'
+            - '@invertus.printify.api.token_api'
+
+    print_provider_repository:
+        class: 'Invertus\Printify\Repository\PrintProviderRepository'
+
+    blueprint_repository:
+        class: 'Invertus\Printify\Repository\BlueprintRepository'
+
+    print_provider_data_handler:
+        class: 'Invertus\Printify\Product\ProductPrintProviderHandler'
+        arguments:
+            - '@invertus.printify.print_provider_api'
+            - '@product_repository'
+            - '@print_provider_repository'
+            - '@blueprint_repository'
+
+    printify_log_repository:
+        class: 'Invertus\Printify\Repository\PrintifyLogRepository'
+
+    printify_logger:
+        class: 'Invertus\Printify\Service\Logger'
+        arguments:
+            - '@printify_log_repository'
+
+    printify_web_hook_registerer:
+        class: 'Invertus\Printify\Service\WebHookRegisterer'
+        arguments:
+            - '@invertus.printify.api.web_hook_api'
+            - '%printify_webhooks%'
+            - '@printify_logger'
+    invertus.printify.repository.tab_repository:
+        class: Invertus\Printify\Repository\TabRepository
+        arguments: ['@printify.module']
+
+    printify_connection_manager:
+        class: Invertus\Printify\Service\PrintifyConnectionManager
+        arguments:
+            - '@printify_logger'
+            - '@printify_web_hook_registerer'
+            - '@invertus.printify.api.shop_api'
+
+    product_attribute_delete_handler:
+        class: Invertus\Printify\Product\ProductAttributeDeleteHandler
+        arguments:
+            - '@printify_association_repository'
+            - '@printify_logger'
+
+    attribute_delete_handler:
+        class: Invertus\Printify\Product\AttributeDeleteHandler
+        arguments:
+            - '@printify_association_repository'
+            - '@printify_logger'
+            -
+parameters:
+    printify_base_url: 'https://printify.com'
+    printify_routing:
+        routes:
+            admin_printify_product_edit:
+                path: '/app/editor/{productId}/mockups'
+            printify_authorize:
+                path: '/app/authorize?app_id={appId}&accept_url={acceptUrl}&decline_url={declineUrl}&state={state}&extra_data={extra_data}'
+            printify_connection_accepted:
+                path: '/app/store/products/1?prestashopConnectionCode={code}&shop_id={shop_id}'
+        prefix: '%printify_base_url%'
+    printify_webhooks:
+        - {hook: 'product:publish:started', type: 'product'}
+        - {hook: 'product:deleted', type: 'product'}
+        - {hook: 'order:created', type: 'order'}
+        - {hook: 'order:updated', type: 'order'}
+        - {hook: 'order:shipment:created', type: 'order'}
+        - {hook: 'order:sent-to-production', type: 'order'}
+        - {hook: 'order:shipment:delivered', type: 'order'}
+        - {hook: 'shop:disconnected', type: 'shop'}
+    module_settings:
+        configuration:
+            'PRINTIFY_ID_SHOP': ''
+            'PRINTIFY_SEND_ORDER_ON_PAID': 0
+            'PRINTIFY_LOG_STORAGE_DURATION': 7
+            'PRINTIFY_TOKEN_EXPIRE_DATE': ''
+            'PRINTIFY_REFRESH_TOKEN': ''
+            'PRINTIFY_ACCESS_TOKEN': ''
+            'PRINTIFY_STATE_TOKEN': ''
+            'PRINTIFY_ACCESS_CODE': ''
+        hooks:
+            - 'actionDispatcherBefore'
+            - 'actionValidateOrder'
+            - 'actionOrderStatusPostUpdate'
+            - 'actionAdminControllerSetMedia'
+            - 'actionProductDelete'
+            - 'actionProductAttributeDelete'
+            - 'actionAttributeDelete'
+
+
+

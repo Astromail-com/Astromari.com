@@ -1,0 +1,7 @@
+Hallo {seller_name},
+Uw commissie wordt geannuleerd. Vind hieronder details:
+ID commissie: R-{commission_ID}
+Commissiebedrag: {amount}
+Reden: {Reason}
+Aanmaakdatum: {created_date}
+Geannuleerde datum: {approved_date}

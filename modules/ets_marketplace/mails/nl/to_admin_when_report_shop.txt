@@ -1,0 +1,4 @@
+Hallo beheerder,
+{reporter} heeft zojuist gemeld dat {shop_seller} misbruikt is.
+{title}
+{content}

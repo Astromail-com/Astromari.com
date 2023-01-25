@@ -1,0 +1,5 @@
+Hallo {seller_name},
+
+Uw winkel is geüpgraded met {fee_type}: {fee_amount} vergoeding en commissietarief is {commission_rate}
+
+Vriendelijke groeten,

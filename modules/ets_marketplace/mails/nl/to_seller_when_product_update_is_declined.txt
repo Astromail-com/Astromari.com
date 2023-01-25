@@ -1,0 +1,4 @@
+Hallo {seller_name}
+Productupdate {product_name} is geweigerd.
+{reason_txt}
+Vriendelijke groeten.

@@ -1,0 +1,7 @@
+Hallo beheerder,
+Verkoper {seller_name} heeft zojuist een nieuw product geüpload naar de marktplaats
+E-mailadres van verkoper: {seller_email}
+Winkelnaam: {shop_seller}
+Product-ID: {product_ID}
+Productnaam: {product_name}
+Hoogachtend.

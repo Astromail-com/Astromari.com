@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>tfprimemembershippro</name>
+    <displayName><![CDATA[Become Prime Member]]></displayName>
+    <version><![CDATA[10.0.0]]></version>
+    <description><![CDATA[Allow customers to become prime member]]></description>
+    <author><![CDATA[Techno Flock]]></author>
+    <tab><![CDATA[front_office_features]]></tab>
+	<confirmUninstall><![CDATA[Do you want to uninstall this module?]]></confirmUninstall>
+    <is_configurable>1</is_configurable>
+    <need_instance>1</need_instance>
+	<limited_countries></limited_countries>
+</module>

@@ -1,0 +1,125 @@
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+.nav-bar .material-icons.eamfs0,
+.nav-bar .material-icons.mi-eam-device_hub,
+.nav-bar .material-icons.mi-eam_person_add,
+#subtab-AdminEtsAmLoyalty a.link i:first-child,
+#subtab-AdminEtsAmAffiliate a.link i:first-child,
+#subtab-AdminEtsAmWithdrawals a.link i:first-child,
+#subtab-AdminEtsAmRewardHistory a.link i:first-child,
+.nav-bar .material-icons.mi-eam_show_chart {
+    font-size: 0!important;
+    width: 16px;
+    height: 16px;
+}
+.nav-bar .material-icons.eamfs0:before,
+#subtab-AdminEtsAmLoyalty a.link i:first-child:before,
+#subtab-AdminEtsAmAffiliate a.link i:first-child:before,
+#subtab-AdminEtsAmWithdrawals a.link i:first-child:before,
+#subtab-AdminEtsAmRewardHistory a.link i:first-child:before,
+.nav-bar .material-icons.mi-eam-device_hub:before,
+.nav-bar .material-icons.mi-eam_person_add:before,
+.nav-bar .material-icons.mi-eam_show_chart:before {
+    font-size: 1rem;
+    font-family: Fontawesome;
+}
+.fa,.fa:before{
+	font-family: Fontawesome!important;
+}
+.icon-AdminEtsAm:before{
+    font-family: FontAwesome,sans-serif;
+    content: '\f091';
+}
+#subtab-AdminEtsAmLoyalty a.link i:first-child:before{content:"\f004"}
+#subtab-AdminEtsAmAffiliate a.link i:first-child:before{content:"\f1e0"}
+#subtab-AdminEtsAmWithdrawals a.link i:first-child:before{content:"\f0ca"}
+#subtab-AdminEtsAmRewardHistory a.link i:first-child:before{content:"\f1da"}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.mobile li#tab-AdminEtsAm {
+    display: block;
+}
+.mobile li#tab-AdminEtsAm.actived > span.title:after {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    margin-top: 3px;
+}
+.mobile li#tab-AdminEtsAm > span.title:after {
+    content: "";
+    border-top: 2px solid #6c868e;
+    border-right: 2px solid #6c868e;
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    float: right;
+    margin-right: 32px;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.mobile #subtab-AdminEtsAmDashboard,
+.mobile #subtab-AdminEtsAmLoyalty,
+.mobile #subtab-AdminEtsAmRS,
+.mobile #subtab-AdminEtsAmAffiliate,
+.mobile #subtab-AdminEtsAmRU,
+.mobile #subtab-AdminEtsAmApp,
+.mobile #subtab-AdminEtsAmRewardHistory,
+.mobile #subtab-AdminEtsAmWithdrawals,
+.mobile #subtab-AdminEtsAmCronjob,
+.mobile #subtab-AdminEtsAmGeneral{
+    display:none;
+}
+.mobile #subtab-AdminEtsAmDashboard.ets_sidebar_menu_show,
+.mobile #subtab-AdminEtsAmLoyalty.ets_sidebar_menu_show,
+.mobile #subtab-AdminEtsAmRS.ets_sidebar_menu_show,
+.mobile #subtab-AdminEtsAmAffiliate.ets_sidebar_menu_show,
+.mobile #subtab-AdminEtsAmRU.ets_sidebar_menu_show,
+.mobile #subtab-AdminEtsAmApp.ets_sidebar_menu_show,
+.mobile #subtab-AdminEtsAmRewardHistory.ets_sidebar_menu_show,
+.mobile #subtab-AdminEtsAmWithdrawals.ets_sidebar_menu_show,
+.mobile #subtab-AdminEtsAmCronjob.ets_sidebar_menu_show,
+.mobile #subtab-AdminEtsAmGeneral.ets_sidebar_menu_show{
+    display: block;
+}
+.mobile #subtab-AdminEtsAmDashboard a.link i:first-child,
+.mobile #subtab-AdminEtsAmLoyalty a.link i:first-child,
+.mobile #subtab-AdminEtsAmRS a.link i:first-child,
+.mobile #subtab-AdminEtsAmAffiliate a.link i:first-child,
+.mobile #subtab-AdminEtsAmRU a.link i:first-child,
+.mobile #subtab-AdminEtsAmApp a.link i:first-child,
+.mobile #subtab-AdminEtsAmRewardHistory a.link i:first-child,
+.mobile #subtab-AdminEtsAmWithdrawals a.link i:first-child,
+.mobile #subtab-AdminEtsAmCronjob a.link i:first-child,
+.mobile #subtab-AdminEtsAmGeneral a.link i:first-child{
+    width: 32px;
+}
+.mobile #subtab-AdminEtsAmDashboard a.link i:first-child:before,
+.mobile #subtab-AdminEtsAmLoyalty a.link i:first-child:before,
+.mobile #subtab-AdminEtsAmRS a.link i:first-child:before,
+.mobile #subtab-AdminEtsAmAffiliate a.link i:first-child:before,
+.mobile #subtab-AdminEtsAmRU a.link i:first-child:before,
+.mobile #subtab-AdminEtsAmApp a.link i:first-child:before,
+.mobile #subtab-AdminEtsAmRewardHistory a.link i:first-child:before,
+.mobile #subtab-AdminEtsAmWithdrawals a.link i:first-child:before,
+.mobile #subtab-AdminEtsAmCronjob a.link i:first-child:before,
+.mobile #subtab-AdminEtsAmGeneral a.link i:first-child:before{
+    font-size: 29px;
+    width: 32px;
+    height: 28px;
+}
+
+
+

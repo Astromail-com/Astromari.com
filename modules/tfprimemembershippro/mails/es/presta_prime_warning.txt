@@ -1,0 +1,12 @@
+Hello {customer_name},
+
+Your prime membership is about to expire. Please renew or extend it before it get expired!
+
+Plan Details -
+Name - {product_name}
+Plan Price - {plan_price}
+Plan Type - {plan_type}
+
+Thank you.
+{shop_name} - {shop_url}
+{shop_url} powered by PrestaShop&trade;

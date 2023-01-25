@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>categorytree</name>
+    <displayName><![CDATA[Product category parent assign, category tree regenerate]]></displayName>
+    <version><![CDATA[1.4.5]]></version>
+    <description><![CDATA[Add or remove products from default category parents,
+            regenerate the category tree for products and categories]]></description>
+    <author><![CDATA[weblir]]></author>
+    <tab><![CDATA[administration]]></tab>
+    <is_configurable>1</is_configurable>
+    <need_instance>0</need_instance>
+	<limited_countries></limited_countries>
+</module>

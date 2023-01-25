@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>ets_collections</name>
+    <displayName><![CDATA[Product Collections]]></displayName>
+    <version><![CDATA[1.0.4]]></version>
+    <description><![CDATA[Product Collections is a product showcase module for PrestaShop that makes it easier for your customers to discover, browse and purchase products in a visual and diverse way.]]></description>
+    <author><![CDATA[ETS-Soft]]></author>
+    <tab><![CDATA[front_office_features]]></tab>
+    <is_configurable>1</is_configurable>
+    <need_instance>0</need_instance>
+	<limited_countries></limited_countries>
+</module>

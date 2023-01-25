@@ -1,0 +1,5 @@
+Hallo {seller_name},
+Er wordt een facturatie voor u gemaakt. Download de factuur in de bijlage en stuur de betaling naar ons.
+Hier is onze betalingsinformatie:
+{payment_information}
+Hoogachtend.

@@ -1,0 +1,12 @@
+#subtab-AdminPrintifyParent {
+    display:none;
+}
+
+#subtab-AdminPrintifyParent_MTR .material-icons:first-of-type::before{
+    background-image: url("../img/printify-logo.svg");
+    background-size: 1em 1em;
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    content: "";
+}

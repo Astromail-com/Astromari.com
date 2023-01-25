@@ -1,0 +1,3 @@
+Hallo beheerder,
+{seller_name} heeft zojuist een aanvraag ingediend om lid te worden van de marktplaats
+{seller_application_content_txt}

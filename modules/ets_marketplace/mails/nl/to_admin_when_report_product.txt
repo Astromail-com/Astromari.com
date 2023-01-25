@@ -1,0 +1,4 @@
+Hallo beheerder,
+{reporter} heeft zojuist gemeld dat product {product_name} is misbruikt.
+{title}
+{content}

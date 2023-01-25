@@ -1,0 +1,5 @@
+Hallo {seller_name},
+{reporter} heeft zojuist gemeld dat uw product {product_name} op {shop_seller} is misbruikt.
+{title}
+{content}
+Bekijk product: {link_report}

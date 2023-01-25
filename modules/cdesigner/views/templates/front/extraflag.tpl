@@ -1,0 +1,1 @@
+<li class="product-flag">{l s='Customizable' d='Shop.Theme.Actions'}</li>
